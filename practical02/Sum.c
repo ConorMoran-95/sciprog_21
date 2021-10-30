@@ -21,14 +21,13 @@ int main(void) {
 /* adding the value of 1 over i to the sum2 variable in each iteration */
       sum2 = sum2+ 1.0/i;
    }
-
+/* Printing out our two sum results */
    printf(" Sum1=%f\n",sum1);
    printf(" Sum2=%f\n",sum2);
 
-/* Find the difference */
 /* Subtracting sum1 from sum2 to find the difference */
    diff = sum2-sum1;
-
+/* Showcasing the difference */
    printf(" Difference between the two is %f\n",diff);
 
 }

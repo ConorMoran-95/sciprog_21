@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main(){
-	
+/* Declaring the variables */	
   int N=12, i;
   float a=0.0, b_deg=60.0;
 

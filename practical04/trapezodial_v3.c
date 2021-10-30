@@ -1,14 +1,15 @@
 #include<stdio.h>
 #include<math.h>
 
+// Declaring our functions
 float degtorad(float degang);
 float traprule(int N, float TanArr[N+1]);
 
 int main(){
-
+  // declaring the variables we need
   int N=12, i;
   float TanArr[N+1], deg, rad;
-  //Calculate the values of f(xi) where i=0, 1, ..., 12
+  //Calculating the values of f(xi) where i=0, 1, ..., 12
   //as array elements (xi in radians)
   for(i=0; i<=N; i++){
     deg=i*5.0;
@@ -28,16 +29,16 @@ int main(){
 return 0;
 }
 
+// degree to radian function definition
 float degtorad(float degang){
   return((M_PI*degang)/180.0);
-
-
 }
 
+// function definition for the trapezodial rule
 float traprule(int N, float TanArr[N+1]){
   int i;
   float area;
-  
+ /* calculating the area using our Tan Array */ 
   area=TanArr[0]+TanArr[N];
   for(i=1; i<N; i++){
     area=area+2.0*TanArr[i];
@@ -46,6 +47,6 @@ float traprule(int N, float TanArr[N+1]){
   //Multiply area by (pi/3)/2N after converting it to radians
     float mult_rad=degtorad((60.0-0.0)/(2.0*N));
     area=mult_rad*area;
-      
+  // returning the desired result    
   return area;
 }

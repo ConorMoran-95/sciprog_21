@@ -26,14 +26,14 @@ int main(void) {
    binnum[i] = '\0';
        
 
-/* Complete the expression */
-   /* returning the smaller integer value that is greater than
+
+/* returning the smaller integer value that is greater than
  * or equal to result of dividing the natural logarithm of both fnum and 2 */
    numdigits = ceil(logf(fnum)/logf(2));
    printf("The number of digits is %d\n",numdigits);
 
 
-
+/* Printing out our result */ 
    printf("inum=%d,  fnum=%f, inum in binary=%s\n",
       inum,fnum,binnum);
 

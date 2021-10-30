@@ -1,12 +1,11 @@
 #include<stdio.h>
-
+// the comments for this almost identical code can be found in the matmult.c script
 int main(){
 
   int n=5, p=3, q=4;
   double A[n][p], B[p][q], C[n][q];
   int i, j, k;
   
-  //Initialize A, B and C matrices
   for(i=0; i<n; i++){
     for(j=0; j<p; j++){
       A[i][j]=i+j;  
@@ -22,12 +21,9 @@ int main(){
       C[i][j]=0.0;
     }
   }
-  // Perform matrix multiplication
+  // Perform matrix multiplication with the matmult function
+  // This function can be found within mm.c 
   matmult(n,p,q,A,B,C);
- /* for(i=0; i<n; i++)
-    for(j=0; j<q; j++)
-      for(k=0; k<p; k++)
-        C[i][j]=C[i][j]+A[i][k]*B[k][j];*/
 
   //Print out the matrices
   printf("\nThis is the matrix A:\n\n");
