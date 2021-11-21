@@ -1,3 +1,5 @@
+The focus for this practical is dynamically allocated arrays. Using the formula provide, we will estimate the value of e by setting x = 1. 
+
 Please find below the means for compiling and running the two scripts necessary to complete this practical.
 
 gcc -o poly polynomial.c  -lm
