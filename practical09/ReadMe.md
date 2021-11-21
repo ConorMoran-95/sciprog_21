@@ -1,3 +1,5 @@
+In the penultimate practical, we will read input from a file and look at solving the magic square problem.
+
 Two files have been uploaded for the completion of practical09.
 
 Both of these files can be compiled and ran as follows:
