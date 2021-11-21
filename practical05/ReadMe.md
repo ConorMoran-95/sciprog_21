@@ -1,3 +1,5 @@
+For this practical, we are going to start to use pointers look at user input to programs. We'll create a program that displays the Fibonacci series upto n. We will then look at the Inverse Hyperbolic Tangent function.
+
 There are three scripts uploaded here which are required to successfully complete this practical.
 
 Namely, these are Arctan.c, fibo.c and scanf.c.
